@@ -2,6 +2,6 @@
   "name": "db",
   "version": "0.0.1",
   "dependencies": {
-    "mariadb": "2.1.4"
+    "mariadb": "2.4.0"
   }
 }
