@@ -3,6 +3,6 @@
   "version": "0.0.1",
   "dependencies": {
     "mariadb": "2.4.0",
-    "logger": "github:kusigit/logger",
+    "logger": "github:kusigit/logger"
   }
 }
