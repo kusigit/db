@@ -46,6 +46,6 @@ const handler = (getData) => async (req, res) => {
 };
 
 module.exports = {
-  getConnection: getConnection,
-  handler: handler,
+  getConnection,
+  handler,
 };
