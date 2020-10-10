@@ -36,7 +36,7 @@ const handler = (getData) => async (req, res) => {
     const data = await getData(conn, req, res);
     res.send(data || {state: 'ok'});
   } catch (err) {
-    logError(err.message);
+    await logError(err.message);
     res.status(500).send(err);
   } finally {
     if (conn) {
