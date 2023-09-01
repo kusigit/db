@@ -52,7 +52,7 @@ const handler = (getData) => async (req, res) => {
     res.status(500).send(err);
   } finally {
     if (conn) {
-      await conn.end();
+      conn.end();
     }
   }
 };
