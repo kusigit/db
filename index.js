@@ -44,7 +44,7 @@ const getConnection = async (withPool = false) => {
 const handler = (getData) => async (req, res) => {
   let conn = null;
   try {
-    conn = await getConnection(true);
+    conn = await getConnection();
     const data = await getData(conn, req, res);
     res.send(data || { state: 'ok' });
   } catch (err) {
